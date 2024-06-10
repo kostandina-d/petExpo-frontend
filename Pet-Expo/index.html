@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+        <h1>THIS IS OUR PET EXPO</h1>
+    </header>
+<!--Creating the container with the types of pets-->
+    <h2>TYPE OF PETS</h2> 
+    <section id="pets">
+        <div class="card" data-type="dogs">
+            <img class="boximg" src="images/dogs.jpg" alt="Dogs">
+              <h1>DOGS</h1>
+          </div>
+          <div class="card" data-type="cats">
+            <img class="boximg"src="images/cat.jpg" alt="Cats">
+              <h1>CATS</h1>
+          </div>
+          <div class="card" data-type="birds">
+            <img class="boximg"src="images/birds.jpg" alt="Birds">
+              <h1>BIRDS</h1>
+          </div>
+    </section>
+
+<!--About us section that has some information-->
+    <section id="about">
+   <h2>ABOUT US</h2>
+    <p> Are you interested in getting more information about different pets? </p>
+    <p>THEN THIS IS THE RIGHT WEBSITE FOR YOU</p>
+    <p>This is a website which allows you to take a look at some different types of pets<br>
+         and a gallery with information about each.</p>
+    <p>Our webite helps you in making the right choice by giving you all the options available.</p>
+    <p>Finding more information about pets does not have to be difficult anymore. </p>
+    </section>
+
+
+<!--The contact us form-->
+    <h2>CONTACT US</h2>
+    <section id="contact">
+        <h3>In case you have any questions you can leave a message...</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Write your name...">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Write your email...">
+
+            <label for="message">Message:</label>
+            <textarea  id="message" name="message" placeholder="Write your message"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

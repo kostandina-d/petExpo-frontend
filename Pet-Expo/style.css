@@ -1,0 +1,232 @@
+* {box-sizing: border-box;} 
+
+body {
+background-color : #C3DCD2;
+  max-width: 1200 px;
+  margin: 30px;
+}
+
+header{
+  color:#865538;
+  text-align: center;
+  font-size: large;
+}
+
+h2{
+  background-color: #e4b991;
+  padding-left: 20px;
+  text-align:center;
+  color:#013328;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+a{
+  text-decoration: none;
+  color: #865538;
+}
+
+#pets {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.card{
+  background-color: beige;
+  border: 1px, solid, #013328;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 350px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-top: 20px;
+}
+
+.card:hover{
+box-shadow: 0 4px 8px 0 black;
+transition: transform 0.5s;
+}
+
+.card img{
+  width: 300px;
+  height: auto;
+}
+
+#about {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#about p{
+  font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+color:#2c1f03;
+text-align: center;
+}
+
+
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px #52ab98 ;
+    text-align:center;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input{
+  width: 80%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 10px, 0;
+  background: #c8d8e4;
+  border: 1px solid black;
+  border-radius:5px;
+  outline: none;
+
+}
+
+#message{
+  width: 80%;
+    padding: 10px 15px;
+    font-size: 10px;
+    background: #c8d8e4;
+    border: 1px solid black;
+    border-radius:5px;
+}
+
+label{
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color:#013328;
+}
+
+#contact h3{
+  padding: 10px 10px;
+  text-align: center;
+  color:#443004;
+  font-size: 20px;
+
+}
+
+button{
+  width:40%;
+  padding: 10px 20px;
+  background-color:#cc8b65;
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#013328;
+  margin-top: 20px;
+}
+
+#pet-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: space-between;
+}
+
+.pet-card{
+  background-color: beige;
+  border: 1px, solid, black;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 350px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.pet-card img{
+  width: 300px;
+  height: auto;
+}
+
+/*modal*/
+
+.modal{
+  display: none;
+  position:fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  background-color: #f2f2f2;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 50%;
+  max-width:600px;
+  position:relative;
+  overflow: hidden;
+}
+
+.close{
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+color:black;
+text-decoration: none;
+cursor: pointer;
+}
+
+#modal-details img{
+  width:50%;
+  height:50%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-details p{
+  margin: 5px;
+  color:#2c1f03;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#searchInput{
+  width: 30%;
+  padding: 5px 10px;
+  font-size: 17px;
+  margin: 10px, 0;
+  background: #c8d8e4;
+  border: 1px solid black;
+  border-radius:5px;
+  outline: none;
+}
+
+#searchButton{
+  margin-bottom: 10px;
+  width:10%;
+  padding: 5px 10px;
+  background-color: #cc8b65;
+  color:#013328;
+  cursor: pointer;
+}
